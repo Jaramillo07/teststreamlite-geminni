@@ -2,7 +2,8 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configurar API Key desde secretos
-genai.configure(api_key=st.secrets["AIzaSyAJL5bTjSrQXY13hP1PXtDHySUM--Gz1U4"])
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+
 
 st.title("🔮 Prueba de conexión con Gemini")
 
