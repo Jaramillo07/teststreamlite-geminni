@@ -10,7 +10,7 @@ st.title("🔮 Prueba de conexión con Gemini")
 prompt = st.text_input("Escribe algo para preguntar a Gemini:")
 
 if prompt:
-    model = genai.GenerativeModel("gemini-2.0-pro")
+    model = genai.GenerativeModel("gemini-1.5-pro-latest")
     response = model.generate_content(prompt)
     st.write("**Respuesta de Gemini:**")
     st.write(response.text)
